@@ -1,0 +1,47 @@
+def retail_chatbot():
+    print(¨ Welcome to The Clothing Store¨)
+
+# User Info 
+name = input(¨What´s your name? ¨)
+age = input(¨ How old are you? ¨)
+print(F¨Nice to meet you, !¨)
+
+print(¨/nI´m your virtual shopping assistant. How can I help you today?¨)
+
+While True:
+    print(¨/nPlease choose an option:¨)
+    print(¨1. View store hours¨)
+    print(¨2. View store location´)
+    print(¨3. Browse available products¨)
+    print(¨4. Check prices¨)
+    print(¨5. Current sales and discounts¨)
+    print(¨6. Place an order¨)
+    print(¨ Exit¨)
+
+    choice = input (¨/nEnter the number of your chouce: ¨)
+
+    if choice == ¨1¨:
+        print(¨ We are open Monday-Saturday, 9 AM- 11 PM¨.)
+    elif choice == ¨2¨:
+        print(¨ Our store us located at 123 Main Street, Downtown.¨)
+    elif choice == ¨3¨:
+        print(¨ We sell jeans, hoddies, shirts, and accessories:¨)
+    elif choice == ¨4¨:
+        print(¨ Jeans: $40, Hoddies: $35, Shirts: $20, Accessories: $15¨)
+    elif choice == ¨5¨: 
+        print(¨ This week´s deal: Buy 2 hoddies, get one free!¨)
+    elif choice == ¨6¨: 
+        order = input(¨What item would you like to order?)
+        if order in [¨Jeans¨, ¨Hoddies¨, ¨Shirts¨, ¨Accessories¨]:
+            quantity = int(input(f¨How many {Orders would you like to buy?¨))
+            print(f¨ Order Confirmed! {Quantity} {Order} will be ready for pickup in 2 hours.¨)
+        else:
+            print(¨ Sorry, we don´t have that item in stock now.¨)
+    elif choice == ¨7¨:
+        print{f¨n/Goodbye, Thank for shopping with us.¨)
+        print(¨ Before you go, could you please rate your experience today? Thank You!¨)
+
+        rating = init(rating)
+        if 1 <= rating <= 5:
+            if rating == 5:
+                print(¨Awesome! We are so glad you had a great experience shopping with us!¨)
